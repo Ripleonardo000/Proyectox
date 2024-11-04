@@ -14,25 +14,27 @@ namespace Proyectox.Models
         [Range(0, 9000)]
         public float costoEquipo { get; set; }
 
-       // public Boolean  { get; set; }
+        // public Boolean  { get; set; }
 
+        [MaxLength(21)]
         public string Pais { get; set; }
 
-        public string Liga {  get; set; }
+        //public string Liga {  get; set; }
 
-
+        [Range(0, 200)]
         public int Titulos { get; set; }
 
-        
+
 
 
         public DateTime Fundacion { get; set; }
 
 
-       // public Celular? Celular { get; set; }
+        public Liga? Liga { get; set; }
+        [ForeignKey("Liga")]
 
-       // [ForeignKey("Celular")]
+        public int IdLiga { get; set; }
 
-        //public int IdCelular { get; set; }
+
     }
 }
