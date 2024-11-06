@@ -1,8 +1,64 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron text-center" style="color: white; padding: 300px;">
+    <h1 style="color: #ff69b4;">Soccer Stars Official Page</h1>
+    <p>Explora información detallada sobre jugadores y clubes de las mejores ligas de Europa</p>
+    <a class="btn btn-primary btn-lg" asp-controller="Jugadors" asp-action="Index" style="background-color: #ff69b4; border-color: #ff69b4;">Ver Jugadores</a>
+    <a class="btn btn-primary btn-lg" asp-controller="Clubs" asp-action="Index" style="background-color: #ff69b4; border-color: #ff69b4;">Ver Clubes</a>
 </div>
+
+<style>
+    body {
+        background: url('https://images2.alphacoders.com/136/thumb-1920-1360086.png') no-repeat center center fixed;
+        background-size: cover;
+        background-color: #000000;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    header, footer {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+        header .navbar-brand {
+            color: #ff69b4;
+        }
+
+        header .navbar-nav .nav-link {
+            color: white;
+        }
+
+            header .navbar-nav .nav-link:hover {
+                color: #ff69b4;
+            }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: #ff69b4;
+    }
+
+    footer {
+        color: white;
+    }
+
+    .btn-primary {
+        background-color: #ff69b4;
+        border-color: #ff69b4;
+    }
+
+        .btn-primary:hover {
+            background-color: #ff85c1;
+            border-color: #ff85c1;
+        }
+
+    .jumbotron {
+        background: transparent;
+        text-shadow: 2px 2px 4px #000000;
+    }
+</style>
